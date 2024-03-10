@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Currency.com</title>
+    <link rel="icon" href="https://cdn3.iconfinder.com/data/icons/global-business-52/64/money-exchange-currency-trade-economy-1024.png" type="image/x-icon">
+
+	<link rel="stylesheet"
+		href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+	<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+	</script>
+	<script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+	</script>
+
+	<link rel="preconnect"
+		href=
+"https://fonts.gstatic.com">
+	<link href=
+"https://fonts.googleapis.com/css2?family=Amiri&family=Lobster&family=Pacifico&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<h1 class="heading text-center display-2">
+		Currency Exchange
+	</h1>
+	<hr>
+	<div class="container">
+		<div class="main">
+			<div class="form-group">
+				<label for="oamount">
+					Amount to Convert :
+				</label>
+				<input type="text" class="form-control searchBox" placeholder="0.00" id="oamount">
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text">From</span>
+						</div>
+						<select class="form-control from" id="sel1">
+							<option value="">Select One …</option>
+                            <option value="USD">USD</option>
+							<option value="AED">AED</option>
+							<option value="AUD">AUD</option>
+							<option value="CAD">CAD</option>
+							<option value="CHF">CHF</option>
+							<option value="CNY">CNY</option>
+							<option value="CZK">CZK</option>
+							<option value="DKK">DOP</option>
+							<option value="EGP">EGP</option>
+							<option value="EUR">EUR</option>
+							<option value="GBP">GBP</option>
+							<option value="HKD">HKD</option>
+							<option value="IDR">IDR</option>
+							<option value="INR">INR</option>
+							<option value="JPY">JPY</option>
+							<option value="KRW">KRW</option>
+							<option value="MVR">MVR</option>
+							<option value="MXN">MXN</option>
+							<option value="MYR">MYR</option>
+							<option value="NZD">NZD</option>
+							<option value="PLN">PLN</option>
+							<option value="RUB">RUB</option>
+							<option value="SAR">SAR</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text">To</span>
+						</div>
+						<select class="form-control to" id="sel2">
+							<option value="">Select One …</option>
+                            <option value="USD">USD</option>
+							<option value="AED">AED</option>
+							<option value="AUD">AUD</option>
+							<option value="CAD">CAD</option>
+							<option value="CHF">CHF</option>
+							<option value="CNY">CNY</option>
+							<option value="CZK">CZK</option>
+							<option value="DKK">DOP</option>
+							<option value="EGP">EGP</option>
+							<option value="EUR">EUR</option>
+							<option value="GBP">GBP</option>
+							<option value="HKD">HKD</option>
+							<option value="IDR">IDR</option>
+							<option value="INR">INR</option>
+							<option value="JPY">JPY</option>
+							<option value="KRW">KRW</option>
+							<option value="MVR">MVR</option>
+							<option value="MXN">MXN</option>
+							<option value="MYR">MYR</option>
+							<option value="NZD">NZD</option>
+							<option value="PLN">PLN</option>
+							<option value="RUB">RUB</option>
+							<option value="SAR">SAR</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="text-center">
+
+				<button class="btn btn-primary convert m-2" type="submit">
+					Convert
+				</button>
+
+				<button class="btn btn-primary m-2" onclick="clearVal()">
+					Reset
+				</button>
+			</div>
+
+		</div>
+
+		<div id="finalAmount" class="text-center">
+
+
+			<h2>Converted Amount :
+				<span class="finalValue" style="color:rgb(247, 247, 247);">
+				</span>
+			</h2>
+		</div>
+	</div>
+	<script src="SC.js"></script>
+</body>
+</html>
